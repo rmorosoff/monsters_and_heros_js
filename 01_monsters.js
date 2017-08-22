@@ -34,7 +34,23 @@
     // Put your code here!
     ///////////////////////////
 
-    
+    // constructor for LivingThing object
+    function LivingThing(name, health) {
+      this.name = name;
+      this.health = health;
+    }
+
+    // instantiate 3 instances of LivingThing
+    let Rat = new LivingThing("Rat", 5);
+    let Goblin = new LivingThing("Goblin", 30);
+    let Ogre = new LivingThing("Ogre", 80);
+
+    //  create an array of LivingThings
+    let monsters = [Rat, Goblin, Ogre];
+
+
+
+
     //The code below should work when you are done
     console.log("Monsters!");
 
@@ -58,7 +74,3 @@
     }
 
 })();
-    
-
-
-    

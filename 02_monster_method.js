@@ -16,7 +16,26 @@
     // Put your code here!
     ///////////////////////////
 
-    
+    // constructor for LivingThing object
+    function LivingThing(name, health) {
+      this.name = name;
+      this.health = health;
+      // method to determine if LivingThing is alive
+      this.isAlive = function(){
+        return (this.health > 0);
+      }
+    }
+
+    // instantiate 3 instances of LivingThing
+    let Rat = new LivingThing("Rat", 5);
+    let Goblin = new LivingThing("Goblin", 0);
+    let Ogre = new LivingThing("Ogre", 80);
+
+    //  create an array of LivingThings
+    let monsters = [Rat, Goblin, Ogre];
+
+
+
     //The code below should work when you are done
     console.log("Are the monsters alive?");
 
@@ -40,7 +59,3 @@
     }
 
 })();
-    
-
-
-    
